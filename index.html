@@ -1,5 +1,92 @@
 <!DOCTYPE html>
-<html><head><title>Quran Majeed</title></head>
-<body><h1>Quran Majeed: Tilawat & Recite</h1>
-<p>Official developer page for the Quran Majeed Android app.</p>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qwark</title>
+  <meta name="description" content="Qwark — independent Android app developer.">
+  <style>
+    :root {
+      --bg: #faf5ea; --ink: #1f2a24; --muted: #6b7a70;
+      --accent: #c39b4e; --primary: #0e6849; --border: #e5dcc4;
+      --surface: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1f26; --ink: #faf5ea; --muted: #8ba39a;
+        --accent: #ddbe7e; --primary: #22ce83;
+        --border: rgba(195,155,78,0.2); --surface: #142f36;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg); color: var(--ink); margin: 0;
+      line-height: 1.6; font-size: 15px;
+    }
+    main { max-width: 560px; margin: 0 auto; padding: 64px 24px; }
+    .caps {
+      text-transform: uppercase; letter-spacing: 1.2px;
+      font-size: 10px; color: var(--accent); font-weight: 500;
+    }
+    .star {
+      display: inline-block; width: 14px; height: 14px;
+      background-color: var(--accent); vertical-align: -2px; margin-right: 6px;
+      clip-path: polygon(50% 0%, 65% 25%, 100% 25%, 75% 50%, 100% 75%, 65% 75%, 50% 100%, 35% 75%, 0% 75%, 25% 50%, 0% 25%, 35% 25%);
+    }
+    h1 {
+      font-family: Georgia, "Cormorant Garamond", serif;
+      font-weight: 400; font-size: 36px; margin: 12px 0 8px;
+    }
+    p.tagline { color: var(--muted); font-style: italic; margin: 0 0 32px; }
+    .app-row {
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--surface); border: 0.5px solid var(--border);
+      border-radius: 8px; padding: 18px 20px; margin: 10px 0;
+      text-decoration: none; color: inherit;
+      transition: border-color 0.15s ease;
+    }
+    .app-row:hover { border-color: var(--accent); }
+    .app-row .name { font-weight: 500; }
+    .app-row .desc { color: var(--muted); font-size: 13px; margin-top: 2px; }
+    .app-row .arrow { color: var(--accent); }
+    footer {
+      color: var(--muted); font-size: 13px; margin-top: 48px;
+      border-top: 0.5px solid var(--border); padding-top: 20px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <span class="caps"><span class="star"></span>qwark</span>
+    <h1>Qwark</h1>
+    <p class="tagline">Independent Android app developer.</p>
+
+    <a class="app-row" href="al-quran/">
+      <div>
+        <div class="name">Al-Quran</div>
+        <div class="desc">Read, listen, reflect. A premium Quran companion.</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+    <!-- Add new apps as <a class="app-row"> blocks here:
+    <a class="app-row" href="app2/">
+      <div>
+        <div class="name">App 2</div>
+        <div class="desc">One-line description.</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    -->
+
+    <footer>
+      Contact: <a href="mailto:abdulmoizofficial0@gmail.com">abdulmoizofficial0@gmail.com</a>
+    </footer>
+  </main>
+
+</body>
+</html>
