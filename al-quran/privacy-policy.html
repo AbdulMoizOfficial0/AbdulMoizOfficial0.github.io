@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Al-Quran</title>
+  <meta name="description" content="Privacy policy for the Al-Quran Android app by Qwark.">
+  <style>
+    :root {
+      --bg: #faf5ea;
+      --paper: #f5ebd3;
+      --surface: #ffffff;
+      --ink: #1f2a24;
+      --muted: #6b7a70;
+      --accent: #c39b4e;
+      --primary: #0e6849;
+      --border: #e5dcc4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1f26;
+        --paper: #0e2a22;
+        --surface: #142f36;
+        --ink: #faf5ea;
+        --muted: #8ba39a;
+        --accent: #ddbe7e;
+        --primary: #22ce83;
+        --border: rgba(195,155,78,0.2);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
+    h1 { font-family: Georgia, "Cormorant Garamond", serif; font-weight: 400; font-size: 28px; margin: 0 0 4px; }
+    h2 { font-family: Georgia, serif; font-weight: 500; font-size: 18px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 0.5px solid var(--accent); }
+    h3 { font-weight: 500; font-size: 15px; margin: 24px 0 8px; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px; padding-left: 18px; }
+    li { margin: 4px 0; }
+    a { color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--accent); }
+    a:hover { color: var(--accent); }
+    strong { font-weight: 500; }
+    code { font-family: ui-monospace, "SF Mono", Monaco, Menlo, monospace; font-size: 13px; background: var(--paper); padding: 2px 6px; border-radius: 4px; }
+    .updated { color: var(--muted); font-style: italic; font-size: 13px; margin-bottom: 24px; }
+    .caps { text-transform: uppercase; letter-spacing: 1.2px; font-size: 10px; color: var(--accent); font-weight: 500; }
+    .tldr { background: var(--paper); border: 0.5px solid var(--accent); border-radius: 8px; padding: 16px 18px; margin: 16px 0 24px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 14px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 0.5px solid var(--border); vertical-align: top; }
+    th { font-weight: 500; color: var(--muted); }
+    footer { color: var(--muted); font-size: 13px; margin-top: 40px; border-top: 0.5px solid var(--border); padding-top: 16px; }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <span class="caps">privacy policy</span>
+    <h1>Al-Quran</h1>
+    <p class="updated">Last updated: 19 June 2026</p>
+
+    <p>
+      Al-Quran ("the App") is an Android application developed by <strong>Qwark</strong>
+      ("we", "us", or "our") that helps you read, listen to, and reflect on the Holy Qur'an.
+    </p>
+    <p>
+      This privacy policy applies to the Android app published on Google Play under the package
+      name <code>com.codeflick.quranapp.quranmajeed</code>.
+    </p>
+
+    <div class="tldr">
+      <strong>TL;DR — privacy by default</strong>
+      <ul>
+        <li>No accounts — you don't sign up or log in.</li>
+        <li>No analytics by default — we don't track how you use the App.</li>
+        <li>Your data stays on your device — progress, bookmarks, notes, preferences, all local.</li>
+        <li>We never sell or share your data for marketing.</li>
+      </ul>
+    </div>
+
+    <h2>What the App stores on your device</h2>
+    <p>The App stores the following locally on your phone (MMKV and AsyncStorage). None of it is sent to us.</p>
+    <ul>
+      <li>Reading progress (which ayat you've reached in each surah)</li>
+      <li>Bookmarks you save, with optional reflection notes</li>
+      <li>Preferences: reciter, translation, tafsir source, font size, theme, Mushaf mode</li>
+      <li>Khatam plan settings and daily reminder time</li>
+      <li>Audio playback cache (mp3 files for offline listening, with a configurable size cap)</li>
+      <li>Streak count and a reading-history list of the last surahs you opened</li>
+    </ul>
+    <p>Uninstalling the App deletes all of the above. You can clear the audio cache from <em>Library → Downloads</em> at any time.</p>
+
+    <h2>What is sent over the internet</h2>
+
+    <h3>Content fetched from free public services</h3>
+    <p>To deliver Quranic content, the App makes standard HTTP requests to:</p>
+    <table>
+      <thead><tr><th>Service</th><th>Purpose</th><th>What is sent</th></tr></thead>
+      <tbody>
+        <tr><td>EveryAyah.com</td><td>Audio recitation mp3 files</td><td>URL of the requested ayah</td></tr>
+        <tr><td>Quran.com Foundation API</td><td>Tafsir commentary</td><td>URL + ayah reference</td></tr>
+        <tr><td>alquran.cloud API</td><td>Arabic text + translations</td><td>URL + ayah reference</td></tr>
+        <tr><td>Tanzil Project CDN</td><td>Translation downloads</td><td>URL of the translation file</td></tr>
+        <tr><td>AWS S3 (Mushaf images)</td><td>Printed-page view (optional)</td><td>URL of the page image</td></tr>
+      </tbody>
+    </table>
+    <p>These requests carry the standard HTTP information any browser sends: your IP address, user agent, and the URL being fetched. We don't add any other personal information.</p>
+
+    <h3>Advertising (Google AdMob)</h3>
+    <p>The App displays banner and occasional interstitial ads through Google AdMob to keep the App free. When ads are shown, the AdMob SDK may send to Google:</p>
+    <ul>
+      <li>Your <strong>advertising ID</strong> — a non-personal, resettable identifier you control in Android settings</li>
+      <li>Approximate location derived from your IP address</li>
+      <li>Device type and Android version</li>
+      <li>Whether the App is installed via Play Store</li>
+    </ul>
+    <p>In the EU/EEA, UK, and other GDPR regions, the App shows a consent form on first launch (powered by Google's User Messaging Platform — UMP). You can allow personalized ads, decline (and see non-personalized ads), or change your choice later.</p>
+    <p>Google's use of your advertising ID is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+    <p>You can reset your advertising ID at any time:</p>
+    <p><strong>Android Settings → Privacy → Ads</strong></p>
+    <p>You can opt out of personalized ads entirely:</p>
+    <p><strong>Android Settings → Privacy → Ads → Delete advertising ID</strong></p>
+    <p>A future "Remove Ads" in-app purchase will allow you to remove all advertising.</p>
+
+    <h2>Permissions the App requests</h2>
+    <table>
+      <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><code>INTERNET</code> + <code>ACCESS_NETWORK_STATE</code></td><td>Fetch audio, translations, tafsir</td></tr>
+        <tr><td><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Keep audio playing when the screen is off</td></tr>
+        <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td>Show the daily reading reminder</td></tr>
+        <tr><td><code>WAKE_LOCK</code></td><td>Prevent interruption during long recitations</td></tr>
+        <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Re-schedule your daily reminder after restart</td></tr>
+        <tr><td><code>VIBRATE</code></td><td>Vibrate the notification</td></tr>
+        <tr><td><code>AD_ID</code></td><td>Google AdMob (see Advertising above)</td></tr>
+      </tbody>
+    </table>
+    <p>The App does <strong>not</strong> request location, contacts, camera, microphone, storage, phone state, or any other sensitive permission.</p>
+
+    <h2>Children's privacy</h2>
+    <p>The App is appropriate for users of all ages and is not specifically directed at children under 13. We do not knowingly collect any personal information from children.</p>
+
+    <h2>Data retention</h2>
+    <ul>
+      <li><strong>On-device data:</strong> lives until you uninstall the App or clear it from within.</li>
+      <li><strong>AdMob ad-serving data:</strong> governed by Google's policies.</li>
+      <li><strong>Our servers:</strong> we don't operate any. We store no data about you.</li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <p>Because the App stores no personal data on our servers:</p>
+    <ul>
+      <li>There is no account to delete.</li>
+      <li>There is no profile to export.</li>
+      <li>Uninstalling the App removes everything related to you on your device.</li>
+    </ul>
+    <p>GDPR, CCPA, and similar regulations are respected through the consent flow described above. If you have a specific request, contact us at the email below.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, we'll update the "Last updated" date above. Significant changes will be announced in the App's "What's new" screen on the next update. Continued use after a change means you accept the new policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this privacy policy:<br><a href="mailto:abdulmoizofficial0@gmail.com">abdulmoizofficial0@gmail.com</a></p>
+
+    <footer>
+      Developer: Qwark &middot; App: Al-Quran (<code>com.codeflick.quranapp.quranmajeed</code>) on Google Play &middot;
+      <a href="index.html">← back to app page</a>
+    </footer>
+  </main>
+
+</body>
+</html>

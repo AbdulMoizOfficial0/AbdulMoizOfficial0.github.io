@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Al-Quran — Read, Listen, Reflect</title>
+  <meta name="description" content="A premium, content-first Quran companion for Android. Read with translation, listen to four world-class reciters, and reflect with tafsir on every ayah.">
+  <style>
+    :root {
+      --bg: #faf5ea;
+      --paper: #f5ebd3;
+      --surface: #ffffff;
+      --ink: #1f2a24;
+      --muted: #6b7a70;
+      --accent: #c39b4e;
+      --primary: #0e6849;
+      --border: #e5dcc4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1f26;
+        --paper: #0e2a22;
+        --surface: #142f36;
+        --ink: #faf5ea;
+        --muted: #8ba39a;
+        --accent: #ddbe7e;
+        --primary: #22ce83;
+        --border: rgba(195,155,78,0.2);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+    .caps {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 10px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .star {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-color: var(--accent);
+      clip-path: polygon(50% 0%, 65% 25%, 100% 25%, 75% 50%, 100% 75%, 65% 75%, 50% 100%, 35% 75%, 0% 75%, 25% 50%, 0% 25%, 35% 25%);
+      vertical-align: -2px;
+      margin-right: 6px;
+    }
+    h1 {
+      font-family: Georgia, "Cormorant Garamond", serif;
+      font-weight: 400;
+      font-size: 36px;
+      margin: 10px 0 6px;
+      letter-spacing: -0.5px;
+    }
+    .tagline {
+      color: var(--muted);
+      font-style: italic;
+      font-family: Georgia, serif;
+      font-size: 17px;
+      margin: 0 0 8px;
+    }
+    .arabic {
+      font-family: "Scheherazade New", serif;
+      font-size: 32px;
+      color: var(--accent);
+      direction: rtl;
+      text-align: right;
+      margin: 24px 0 0;
+    }
+    .hero-card {
+      background: var(--paper);
+      border: 0.5px solid var(--accent);
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin: 32px 0;
+      text-align: center;
+    }
+    .hero-card .arabic { text-align: center; margin: 0 0 16px; font-size: 38px; }
+    .hero-card p { color: var(--ink); font-style: italic; font-family: Georgia, serif; font-size: 16px; margin: 0; }
+    .hero-card .ref { color: var(--accent); margin-top: 10px; font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 40px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 0.5px solid var(--accent);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .feature {
+      background: var(--surface);
+      border: 0.5px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 18px 16px;
+    }
+    .feature h3 {
+      margin: 0 0 4px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      margin-top: 12px;
+    }
+    .cta:hover { background: var(--accent); color: var(--primary); }
+
+    .links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+      font-size: 13px;
+    }
+    .links a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 1px; }
+    .links a:hover { color: var(--primary); border-bottom-color: var(--primary); }
+
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 48px;
+      border-top: 0.5px solid var(--border);
+      padding-top: 20px;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    code {
+      font-family: ui-monospace, "SF Mono", Monaco, Menlo, monospace;
+      font-size: 12px;
+      background: var(--paper);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <span class="caps"><span class="star"></span>al-quran by qwark</span>
+    <h1>Read. Listen. Reflect.</h1>
+    <p class="tagline">A quiet, beautiful place to read, listen, and reflect on the Qur'an.</p>
+
+    <div class="hero-card">
+      <div class="arabic">﷽</div>
+      <p>"Indeed, in the remembrance of Allah do hearts find rest."</p>
+      <div class="ref">Ar-Rad 13:28</div>
+    </div>
+
+    <h2>What's inside</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Read with translation</h3>
+        <p>The full Qur'an with 7 translations — Sahih International, Pickthall, Maududi, Hamidullah, and more.</p>
+      </div>
+      <div class="feature">
+        <h3>Listen to recitation</h3>
+        <p>All 114 surahs, four world-class reciters, lock-screen controls, drive mode, sleep timer.</p>
+      </div>
+      <div class="feature">
+        <h3>Tafsir on every ayah</h3>
+        <p>Tap any ayah for commentary from Ibn Kathir, Jalalayn, Maarif-ul-Quran, and Sa'di.</p>
+      </div>
+      <div class="feature">
+        <h3>Bookmarks with notes</h3>
+        <p>Save ayat with a personal reflection. Revisit anytime.</p>
+      </div>
+      <div class="feature">
+        <h3>Khatam plan</h3>
+        <p>Pick 30, 60, 90 days or 1 year. Gentle daily reminder. Track today's progress.</p>
+      </div>
+      <div class="feature">
+        <h3>Privacy by default</h3>
+        <p>No accounts. No analytics. All reading progress lives on your device.</p>
+      </div>
+    </div>
+
+    <h2>Get the app</h2>
+    <p>
+      <a class="cta" href="https://play.google.com/store/apps/details?id=com.codeflick.quranapp.quranmajeed">Open in Google Play</a>
+    </p>
+    <p style="color: var(--muted); margin-top: 16px;">
+      Android only · free · ad-supported · in-app purchase to remove ads coming soon.
+    </p>
+
+    <h2>About this page</h2>
+    <p>
+      This is the official landing page for the <strong>Al-Quran</strong> Android app.
+      Use the links below to find legal pages, support, or report a problem.
+    </p>
+
+    <div class="links">
+      <a href="privacy-policy.html">Privacy policy</a>
+      <a href="mailto:abdulmoizofficial0@gmail.com">Contact / support</a>
+      <a href="https://play.google.com/store/apps/details?id=com.codeflick.quranapp.quranmajeed">Google Play</a>
+    </div>
+
+    <footer>
+      Developer: <strong>Qwark</strong> · Package: <code>com.codeflick.quranapp.quranmajeed</code>
+      <br>Contact: <a href="mailto:abdulmoizofficial0@gmail.com">abdulmoizofficial0@gmail.com</a>
+    </footer>
+  </main>
+
+</body>
+</html>
