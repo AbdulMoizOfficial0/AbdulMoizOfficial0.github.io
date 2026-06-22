@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlQuran — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the AlQuran Android app." />
+  <style>
+    :root {
+      --bg: #FAF7F0;
+      --surface: #FFFFFF;
+      --text: #1C1917;
+      --muted: #78716C;
+      --accent: #064E3B;
+      --gold: #BA7517;
+      --border: #E7E5E4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    header {
+      border-bottom: 0.5px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 500;
+      margin: 0 0 8px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 40px 0 12px;
+      color: var(--accent);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 24px 0 8px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .meta strong { color: var(--text); font-weight: 500; }
+    p { margin: 0 0 14px; }
+    ul { padding-left: 22px; margin: 8px 0 16px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    a:hover { color: var(--gold); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      background: var(--surface);
+      border: 0.5px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 0.5px solid var(--border);
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { background: var(--bg); font-weight: 500; }
+    tr:last-child td { border-bottom: 0; }
+    code {
+      background: var(--bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, "SF Mono", Consolas, monospace;
+      font-size: 13px;
+    }
+    .summary {
+      background: var(--surface);
+      border: 0.5px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 24px;
+    }
+    .summary h2 { margin-top: 0; }
+    .ornament {
+      text-align: center;
+      color: var(--gold);
+      letter-spacing: 8px;
+      margin: 48px 0 16px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 48px;
+      border-top: 0.5px solid var(--border);
+      padding-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>AlQuran — Privacy Policy</h1>
+      <p class="meta">
+        <strong>Effective date:</strong> 2026-06-23<br />
+        <strong>App:</strong> AlQuran (Android)<br />
+        <strong>Package:</strong> <code>com.codeflick.alquranpp.quran.readquran</code><br />
+        <strong>Developer:</strong> Abdul Moiz / CodeFlick
+      </p>
+    </header>
+
+    <p>This policy explains what data the AlQuran app collects, where it goes, and what choices you have. The short version: <strong>we don't run servers that store your data.</strong> Everything you do in the app — your bookmarks, your last-read verse, your settings — lives only on your device. The only data that leaves your phone goes to a small number of carefully-scoped third-party services described below.</p>
+
+    <h2>1. Information we do not collect</h2>
+    <p>We don't run a backend that stores your data. We have no user accounts, no login system, no email collection, no name collection, no profile, and no analytics that tie any activity to you personally.</p>
+    <p>We do not collect, store, or sell:</p>
+    <ul>
+      <li>Your name, email address, phone number, or postal address</li>
+      <li>Your contacts, photos, calendar, microphone, or camera</li>
+      <li>Your browsing history outside the app</li>
+      <li>Your precise location at any time other than the moment you tap a prayer-time or qibla feature (see §3)</li>
+      <li>Any messages, files, or content from other apps</li>
+    </ul>
+
+    <h2>2. Information stored only on your device</h2>
+    <p>The following data is created by your use of the app and saved locally on your phone using <strong>MMKV</strong> (an encrypted-at-rest key-value store). It never leaves your device unless you explicitly share it (e.g., the "Share" button on a verse).</p>
+    <ul>
+      <li><strong>Onboarding state</strong> — whether you've completed the first-run flow</li>
+      <li><strong>Selected language, theme, font, font size, reciter, translation preferences</strong></li>
+      <li><strong>Bookmarks</strong> — the verses you've saved</li>
+      <li><strong>Last-read position</strong> — which surah and verse you last opened</li>
+      <li><strong>Reading streak</strong> — how many consecutive days you've opened the Quran</li>
+      <li><strong>Tasbih counts</strong> — your dhikr counters per preset</li>
+      <li><strong>Notification preferences</strong> — whether daily ayah and adhan reminders are enabled, and the time you chose for daily ayah</li>
+      <li><strong>Persona</strong> — your selection from the onboarding persona picker</li>
+    </ul>
+    <p>Uninstalling the app deletes all of this. You can also clear it manually via your device's <strong>Settings → Apps → AlQuran → Storage → Clear data</strong>.</p>
+
+    <h2>3. Permissions and why we request them</h2>
+    <table>
+      <thead><tr><th>Permission</th><th>Why we ask</th><th>What we do with it</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Internet</strong></td><td>To download Quran text, translations, and audio. To request ads from Google AdMob.</td><td>Standard network requests over HTTPS.</td></tr>
+        <tr><td><strong>Post notifications</strong> (Android 13+)</td><td>To send you the optional daily ayah and optional adhan prayer-time reminders.</td><td>Notifications are scheduled locally on your device. We do not push from a server.</td></tr>
+        <tr><td><strong>Approximate / Precise location</strong></td><td>To calculate accurate prayer times and qibla direction for where you are.</td><td>Used <strong>only on the device</strong>. We never transmit your location to any server. Revocable at any time.</td></tr>
+        <tr><td><strong>Wake lock</strong></td><td>To allow scheduled notifications to wake the device briefly when they fire.</td><td>No data is sent.</td></tr>
+        <tr><td><strong>Vibrate</strong></td><td>To buzz the device on tasbih taps when you enable vibration.</td><td>No data is sent.</td></tr>
+        <tr><td><strong>Receive boot completed</strong></td><td>To re-schedule notifications after the device restarts.</td><td>No data is sent.</td></tr>
+        <tr><td><strong>Foreground service / Foreground service media playback</strong></td><td>Reserved for future audio playback features (not active in the current build).</td><td>When audio is added, this lets reciter playback continue with the screen off. No data is sent.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Quran content — Quran.com Foundation API</h2>
+    <p>When you read the Quran in the app, your device makes anonymous HTTPS requests to the public Quran.com Foundation API (<code>api.quran.com</code>) to fetch:</p>
+    <ul>
+      <li>The 114 surahs and their metadata</li>
+      <li>The 30 juz and their verse mappings</li>
+      <li>Verses by surah, in Uthmani script</li>
+      <li>Translations (you choose which ones in Settings)</li>
+      <li>Search results when you use the search bar</li>
+    </ul>
+    <p>We do not send any personal information with these requests. The Quran.com Foundation may keep standard web-server access logs (IP address, user-agent, timestamps) as is normal for any internet service. Please refer to <a href="https://quran.com">quran.com</a> for their handling of those logs.</p>
+
+    <h2>5. Advertising — Google AdMob</h2>
+    <p>The free version of the app shows ads on <strong>support screens only</strong> (the Quran-browse list, search, bookmarks, prayer times, tasbih, hijri calendar, dua collection, the "More" tab, and settings). <strong>No ads are ever shown inside the Quran reader, the Mushaf page view, the translation reader, the verse action sheet, the audio player (when added), or the Today home screen.</strong></p>
+    <p>Ads are served by <strong>Google AdMob</strong>, a service owned by Google LLC. AdMob may collect a limited set of device-level signals to serve relevant ads, including:</p>
+    <ul>
+      <li>A reset-able advertising identifier (the Android Advertising ID — you can reset or delete it in your device settings)</li>
+      <li>Device type, OS version, language, country code (coarse)</li>
+      <li>Approximate location inferred from IP address (not your precise GPS)</li>
+    </ul>
+    <p>For users in the EEA, UK, and other regions where GDPR or similar laws apply, the app shows Google's User Messaging Platform (UMP) consent screen on first launch. You can choose to allow personalized ads, allow only non-personalized ads, or refuse entirely. <strong>By default, the app requests non-personalized ads.</strong></p>
+    <p>Google's full AdMob privacy disclosure is at <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a> and Google's privacy policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+    <h2>6. Audio — when added</h2>
+    <p>When audio recitation is added in a future update, audio files will stream from the public <strong>EveryAyah.com / Quran.com CDN</strong> as standard HTTPS requests. Same standard server logging applies as in §4. No personal data is attached.</p>
+
+    <h2>7. Prayer times — local calculation</h2>
+    <p>Prayer times are calculated <strong>locally on your device</strong> using the <code>adhan</code> library based on your latitude, longitude, and your selected calculation method. <strong>No request is sent to compute prayer times.</strong></p>
+
+    <h2>8. Sharing data — only when you tap "Share"</h2>
+    <p>Tapping the <strong>Share</strong> button on a verse action sheet triggers Android's native share intent. You then choose where to send the verse (WhatsApp, SMS, email, etc.) and we have no involvement after that point — your chosen app handles the message. We do not see who you shared with or what you sent.</p>
+    <p>The <strong>Copy</strong> button puts the verse text on your device clipboard. We do not read your clipboard at any other time.</p>
+
+    <h2>9. Children's privacy</h2>
+    <p>The app is rated for general audiences and we believe it is appropriate for ages 13 and up. We do not knowingly collect any data from children under 13. The app does not have a "designed for children" classification and Google Play's Families program rules do not apply.</p>
+    <p>If you are under 13 and believe a parent or guardian has provided data through this app, please contact us using the email below and we'll address any concern, even though by design we hold no personal data to delete.</p>
+
+    <h2>10. Data retention and deletion</h2>
+    <p>Because we do not store anything on our servers, there is nothing to retain or delete on our side.</p>
+    <p>Local-only data on your device:</p>
+    <ul>
+      <li><strong>Clear data</strong> in Android Settings → Apps → AlQuran → Storage → Clear data — wipes bookmarks, settings, streak, last-read, everything.</li>
+      <li><strong>Uninstalling</strong> the app removes the app and all its local data.</li>
+    </ul>
+
+    <h2>11. Your rights</h2>
+    <p>Even though we do not have any personal data of yours to manage, you always have the following rights:</p>
+    <ul>
+      <li><strong>Right to know</strong> what data is processed about you (this policy)</li>
+      <li><strong>Right to control permissions</strong> at the OS level — granted permissions can be revoked in Android Settings</li>
+      <li><strong>Right to opt out of personalized advertising</strong> — UMP consent on first launch, or device Ad Settings later</li>
+      <li><strong>Right to delete local data</strong> — clear app data or uninstall</li>
+    </ul>
+    <p>If you have any question about how the app handles data and want a written response, please email the address below.</p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>If this policy changes materially in the future, the in-app <strong>About</strong> screen will note the new effective date, and the policy URL will reflect the latest text. There is no in-app pop-up because we don't collect contact info to alert you. We encourage you to re-read this page whenever a new app version is released.</p>
+
+    <h2>13. Contact</h2>
+    <p>
+      Email: <a href="mailto:abdulmoizofficial0@gmail.com">abdulmoizofficial0@gmail.com</a><br />
+      Developer: Abdul Moiz / CodeFlick<br />
+      Country of residence: Pakistan
+    </p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="summary">
+      <h2>14. Plain-English summary</h2>
+      <ul>
+        <li>We do not collect, store, or sell any personal data.</li>
+        <li>Everything you do in the app stays on your phone.</li>
+        <li>The app makes anonymous calls to the Quran.com API for content, and to Google AdMob for ads.</li>
+        <li>Ads are shown on support screens only, never inside the Quran reader.</li>
+        <li>Your location, if you grant it, is used <strong>on-device only</strong> to compute prayer times — never transmitted.</li>
+        <li>You can clear all app data anytime via Android Settings.</li>
+        <li>Questions: email above.</li>
+      </ul>
+    </div>
+
+    <footer>
+      © Abdul Moiz · AlQuran
+    </footer>
+
+  </div>
+</body>
+</html>
