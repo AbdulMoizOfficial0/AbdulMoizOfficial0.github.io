@@ -26,7 +26,12 @@
       "screenshots": [
         "assets/homegym/screenshots/phone_01_home.png",
         "assets/homegym/screenshots/phone_02_program.png",
-        "assets/homegym/screenshots/phone_03_workout.png"
+        "assets/homegym/screenshots/phone_03_workout.png",
+        "assets/homegym/screenshots/phone_04_complete.png",
+        "assets/homegym/screenshots/phone_05_library.png",
+        "assets/homegym/screenshots/phone_06_progress.png",
+        "assets/homegym/screenshots/phone_07_equipment.png",
+        "assets/homegym/screenshots/phone_08_nologin.png"
       ],
       "features": [
         "Full-body workout plans for every level",
