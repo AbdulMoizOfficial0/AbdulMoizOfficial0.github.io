@@ -23,7 +23,11 @@
       "packageId": "com.homegym.homegymworkoutplan",
       "accentColor": "#c6ff3a",
       "backgroundTint": "#0f1508",
-      "screenshots": [],
+      "screenshots": [
+        "assets/homegym/screenshots/phone_01_home.png",
+        "assets/homegym/screenshots/phone_02_program.png",
+        "assets/homegym/screenshots/phone_03_workout.png"
+      ],
       "features": [
         "Full-body workout plans for every level",
         "Zero equipment required — train anywhere",
