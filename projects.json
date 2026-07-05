@@ -1,0 +1,105 @@
+{
+  "developer": {
+    "brand": "Qwark",
+    "name": "Abdul Moiz",
+    "tagline": "Independent Android app developer.",
+    "bio": "I build Android apps that focus on clarity, speed, and everyday usefulness — from workout planners to premium Quran companions.",
+    "email": "abdulmoizofficial0@gmail.com",
+    "location": "Pakistan"
+  },
+  "projects": [
+    {
+      "id": "homegym",
+      "featured": true,
+      "name": "HomeGym",
+      "subtitle": "Home Workout Plan",
+      "tagline": "Your personal home gym in your pocket.",
+      "shortDescription": "Structured workout plans you can do at home — no equipment, no gym membership, no excuses.",
+      "longDescription": "HomeGym is built for people who want to stay strong and consistent without stepping into a gym. Guided routines, progress tracking, and equipment-free exercises adapt to every fitness level, so building a habit finally sticks.",
+      "status": "live",
+      "statusLabel": "Live on Google Play",
+      "icon": "assets/icons/homegym.svg",
+      "playStoreUrl": "",
+      "packageId": "com.homegym.homegymworkoutplan",
+      "accentColor": "#c6ff3a",
+      "backgroundTint": "#0f1508",
+      "screenshots": [],
+      "features": [
+        "Full-body workout plans for every level",
+        "Zero equipment required — train anywhere",
+        "Track your streak and progress over time",
+        "Clear instructions for every movement"
+      ]
+    },
+    {
+      "id": "alquran",
+      "featured": false,
+      "name": "Al Quran Majeed",
+      "subtitle": "Read Offline",
+      "tagline": "Read, listen, reflect. A premium Quran companion.",
+      "shortDescription": "The complete Quran in your pocket — offline reading, translations, tafseer, bookmarks, and world-class reciters.",
+      "longDescription": "A premium, distraction-free Quran experience. Read all 114 Surahs and 30 Paras offline, follow along with translations and tafseer, and listen to world-class recitations verse by verse. Word-by-word translation makes understanding effortless.",
+      "status": "live",
+      "statusLabel": "Live on Google Play",
+      "icon": "assets/icons/alquran.svg",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.codeflick.alquranapp.quran.readquran",
+      "packageId": "com.codeflick.alquranapp.quran.readquran",
+      "accentColor": "#e0b962",
+      "backgroundTint": "#0a2118",
+      "screenshots": [],
+      "features": [
+        "Complete Quran — all 114 Surahs, offline",
+        "Translations, tafseer, and word-by-word",
+        "World-class reciters, verse-by-verse playback",
+        "Bookmarks, notes, and distraction-free reading"
+      ],
+      "privacyPolicyUrl": "al-quran/privacy-policy.html"
+    },
+    {
+      "id": "crux",
+      "featured": false,
+      "name": "Crux",
+      "subtitle": "AI Resume Checker",
+      "tagline": "Get honest, AI-powered feedback on your resume.",
+      "shortDescription": "Upload your resume, get instant AI feedback on structure, wording, and impact — built to help you land more interviews.",
+      "longDescription": "Crux uses AI to review your resume the way a hiring manager would. Get a clear score, actionable suggestions, and rewritten bullet points — so your resume actually makes it past the first screen.",
+      "status": "live",
+      "statusLabel": "Live on Google Play",
+      "icon": "assets/icons/crux.svg",
+      "playStoreUrl": "",
+      "packageId": "com.crux.ai.resume",
+      "accentColor": "#8f6ee0",
+      "backgroundTint": "#1a1230",
+      "screenshots": [],
+      "features": [
+        "AI-powered resume scoring in seconds",
+        "Actionable, section-by-section feedback",
+        "Rewritten bullet points that hit harder",
+        "Optimized for modern applicant tracking"
+      ]
+    },
+    {
+      "id": "quranmajeed",
+      "featured": false,
+      "name": "Quran Majeed",
+      "subtitle": "Tilawat & Recite",
+      "tagline": "Beautiful Quran recitation, tilawat & translation.",
+      "shortDescription": "A feature-rich Quran app for tilawat, translation, and reflection — with personalized reading targets.",
+      "longDescription": "Experience the divine beauty of the Quran with feature-rich recitation, tilawat, and English translation. Set personalized daily targets, track your progress, and build a consistent reading habit.",
+      "status": "live",
+      "statusLabel": "Live on Google Play",
+      "icon": "assets/icons/quranmajeed.svg",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.codeflick.quranapp.quranmajeed",
+      "packageId": "com.codeflick.quranapp.quranmajeed",
+      "accentColor": "#f5f5f5",
+      "backgroundTint": "#151515",
+      "screenshots": [],
+      "features": [
+        "Beautiful Quran recitation and tilawat",
+        "English translation and reflection",
+        "Personalized daily reading targets",
+        "Track progress and build consistency"
+      ]
+    }
+  ]
+}
