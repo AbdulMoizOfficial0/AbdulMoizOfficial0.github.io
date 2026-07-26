@@ -19,7 +19,7 @@
       "status": "live",
       "statusLabel": "Live on Google Play",
       "icon": "assets/icons/homegym.svg",
-      "playStoreUrl": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.homegym.homegymworkoutplan",
       "packageId": "com.homegym.homegymworkoutplan",
       "accentColor": "#c6ff3a",
       "backgroundTint": "#0f1508",
