@@ -75,7 +75,7 @@
       "status": "live",
       "statusLabel": "Live on Google Play",
       "icon": "assets/icons/crux.svg",
-      "playStoreUrl": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.crux.ai.resume",
       "packageId": "com.crux.ai.resume",
       "accentColor": "#8f6ee0",
       "backgroundTint": "#1a1230",
